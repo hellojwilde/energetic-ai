@@ -1,0 +1,50 @@
+.perfSection {
+  margin: 2rem 0;
+}
+
+.perfHeading {
+  margin-bottom: 0;
+}
+
+.perfSubheading {
+  font-size: var(--ifm-h3-font-size);
+}
+
+.perf {
+  padding: 1.5rem;
+  box-shadow: var(--ifm-global-shadow-lw);
+  border-radius: var(--ifm-code-border-radius);
+  background-color: var(--ifm-pre-background);
+}
+
+.perfChart {
+  margin-bottom: 1.5rem;
+}
+
+.perfSummary {
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-top: -0.75rem;
+  background-image: linear-gradient(225deg, #8500ff, #ff8100);
+  filter: drop-shadow(0 20px 30px #28d8ff33);
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+}
+
+.perfComparison {
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+
+.perfUpTo {
+  margin-bottom: 0;
+  font-weight: bold;
+  background-image: linear-gradient(225deg, #8500ff, #ff8100);
+  filter: drop-shadow(0 20px 30px #28d8ff33);
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+}

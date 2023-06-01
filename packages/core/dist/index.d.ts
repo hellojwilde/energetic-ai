@@ -1,0 +1,38 @@
+import { io as coreIo } from "@tensorflow/tfjs-core";
+import { fileSystem } from "./fileSystem";
+export declare const io: {
+    fileSystem: typeof fileSystem;
+    copyModel: typeof coreIo.copyModel;
+    listModels: typeof coreIo.listModels;
+    moveModel: typeof coreIo.moveModel;
+    removeModel: typeof coreIo.removeModel;
+    browserFiles: typeof coreIo.browserFiles;
+    browserHTTPRequest: typeof coreIo.browserHTTPRequest;
+    concatenateArrayBuffers: typeof coreIo.concatenateArrayBuffers;
+    decodeWeights: typeof coreIo.decodeWeights;
+    encodeWeights: typeof coreIo.encodeWeights;
+    fromMemory: typeof coreIo.fromMemory;
+    fromMemorySync: typeof coreIo.fromMemorySync;
+    getLoadHandlers: (url: string | string[], loadOptions?: coreIo.LoadOptions) => coreIo.IOHandler[];
+    getModelArtifactsForJSON: typeof coreIo.getModelArtifactsForJSON;
+    getModelArtifactsForJSONSync: typeof coreIo.getModelArtifactsForJSONSync;
+    getModelArtifactsInfoForJSON: typeof coreIo.getModelArtifactsInfoForJSON;
+    getSaveHandlers: (url: string | string[]) => coreIo.IOHandler[];
+    getWeightSpecs: typeof coreIo.getWeightSpecs;
+    http: typeof coreIo.http;
+    isHTTPScheme: typeof coreIo.isHTTPScheme;
+    loadWeights: typeof coreIo.loadWeights;
+    registerLoadRouter: (loudRouter: import("@tensorflow/tfjs-core/dist/io/router_registry").IORouter) => void;
+    registerSaveRouter: (loudRouter: import("@tensorflow/tfjs-core/dist/io/router_registry").IORouter) => void;
+    weightsLoaderFactory: typeof coreIo.weightsLoaderFactory;
+    withSaveHandler: typeof coreIo.withSaveHandler;
+    withSaveHandlerSync: typeof coreIo.withSaveHandlerSync;
+};
+export declare const version: {
+    "tfjs-core": string;
+    "tfjs-backend-wasm": string;
+    "tfjs-converter": string;
+};
+export * from "@tensorflow/tfjs-core";
+export * from "@tensorflow/tfjs-converter";
+export * from "@tensorflow/tfjs-backend-wasm";

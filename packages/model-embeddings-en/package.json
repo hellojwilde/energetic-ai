@@ -1,0 +1,29 @@
+{
+  "name": "@energetic-ai/model-embeddings-en",
+  "version": "0.1.0",
+  "description": "> TODO: description",
+  "author": "Jonathan Wilde <hello@jwilde.me>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc --project tsconfig.json && esbuild ./lib/index.ts --bundle --outfile=dist/index.js --platform=node --external:@energetic-ai/core --external:@energetic-ai/embeddings"
+  },
+  "dependencies": {
+    "@energetic-ai/core": "file:../core"
+  },
+  "devDependencies": {
+    "@energetic-ai/embeddings": "file:../embeddings",
+    "esbuild": "^0.17.19",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.5",
+    "vitest": "^0.31.0"
+  }
+}

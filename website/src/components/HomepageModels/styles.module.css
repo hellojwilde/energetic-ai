@@ -1,0 +1,37 @@
+.modelsSection {
+  margin: 2rem 0;
+}
+
+.modelsHeading {
+  margin-bottom: 0;
+}
+
+.modelsSubheading {
+  font-size: var(--ifm-h3-font-size);
+}
+
+.models {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.model {
+  background: linear-gradient(to bottom right, #173068, #201b33);
+  box-shadow: var(--ifm-global-shadow-lw);
+  border-radius: var(--ifm-code-border-radius);
+  padding: 1.5rem;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+
+.modelIcon {
+  width: 36px;
+  height: 36px;
+}
+
+.modelBadges {
+  font-size: 0.8rem;
+  margin-left: 1em;
+  vertical-align: middle;
+}

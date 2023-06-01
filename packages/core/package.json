@@ -1,0 +1,32 @@
+{
+  "name": "@energetic-ai/core",
+  "version": "0.1.0",
+  "description": "> TODO: description",
+  "author": "Jonathan Wilde <hello@jwilde.me>",
+  "homepage": "",
+  "license": "Apache 2",
+  "main": "dist/index.js",
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json && esbuild ./lib/index.ts --bundle --outfile=dist/index.js --platform=node --external:long --external:seedrandom --external:node-fetch"
+  },
+  "devDependencies": {
+    "@tensorflow/tfjs-backend-wasm": "^4.5.0",
+    "@tensorflow/tfjs-converter": "^4.5.0",
+    "@tensorflow/tfjs-core": "^4.5.0",
+    "esbuild": "^0.17.19",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.5",
+    "vitest": "^0.31.0"
+  },
+  "dependencies": {
+    "long": "^4.0.0",
+    "node-fetch": "~2.6.1",
+    "seedrandom": "^3.0.5"
+  }
+}
