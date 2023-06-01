@@ -39,17 +39,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/realworldprivacy/energetic-ai/tree/main/website/",
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/realworldprivacy/energetic-ai/tree/main/website/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -75,9 +71,15 @@ const config = {
             position: "left",
             label: "Docs",
           },
+          {
+            type: "docSidebar",
+            sidebarId: "apiSidebar",
+            position: "left",
+            label: "API",
+          },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/hellojwilde/energetic-ai",
+            href: "https://github.com/realworldprivacy/energetic-ai",
             label: "GitHub",
             position: "right",
           },
@@ -104,7 +106,7 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/hellojwilde/energetic-ai",
+                href: "https://github.com/realworldprivacy/energetic-ai",
               },
               {
                 label: "Twitter",
