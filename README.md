@@ -1,10 +1,9 @@
 <p align="center">
 
-  <img src="https://raw.githubusercontent.com/realworldprivacy/energetic-ai/master/energeticai.png" alt="EnergeticAI" width="226" height="226">
-
-  <h3 align="center">EnergeticAI</h3>
-
+  <img src="https://raw.githubusercontent.com/realworldprivacy/energetic-ai/main/logo.png" alt="EnergeticAI" width="226" height="226">
 </p>
+
+<p align="center">Run open-source AI in serverless functions, up to 67x faster.</p>
 
 # EnergeticAI
 
@@ -65,4 +64,4 @@ This repository uses [Lerna](https://lerna.js.org/) to manage packages, and [Vit
 
 [Apache 2.0](LICENSE)
 
-It's derived from TensorFlow and models on TFHub, which are also Apache 2.0 licensed.
+EnergeticAI is derived from TensorFlow and models on TFHub, which are also Apache 2.0 licensed.
