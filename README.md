@@ -1,6 +1,6 @@
 <p align="center">
 
-  <img src="https://raw.githubusercontent.com/realworldprivacy/energetic-ai/main/logo.png" alt="EnergeticAI" width="492" height="113">
+  <img src="https://raw.githubusercontent.com/realworldprivacy/energetic-ai/main/logo.png" alt="EnergeticAI" width="246" height="56">
 </p>
 
 <p align="center">Run open-source AI in serverless functions, up to 67x faster.</p>
