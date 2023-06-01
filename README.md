@@ -25,7 +25,7 @@ Install the **core package**, along with any **model libraries** you want to use
 npm install @energetic-ai/core @energetic-ai/embeddings
 ```
 
-Optionally, you can install the **model weights**. If you don't, the model weights will be downloaded on first inference.
+Optionally, you can install the **model weights** locally, which speeds up cold start inferece at the cost of module size. If you don't, the model weights will be downloaded on first inference.
 
 ```bash
 npm install @energetic-ai/model-embeddings-en
