@@ -19,10 +19,10 @@ It's intended to be a condensed replacement for TensorFlow.js, so you can use it
 
 EnergeticAI is available on NPM.
 
-It's broken down into packages to minimize bundle size. You'll need to install the **core package**, along with any **model libraries** you want to use (e.g. embeddings):
+Install the **core package**, along with any **model libraries** you want to use (e.g. embeddings):
 
 ```bash
-npm install @energeticai/core @energeticai/embeddings
+npm install @energetic-ai/core @energetic-ai/embeddings
 ```
 
 Optionally, you can install the **model weights**. If you don't, the model weights will be downloaded on first inference.
