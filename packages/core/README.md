@@ -54,4 +54,4 @@ This repository uses [Lerna](https://lerna.js.org/) to manage packages, and [Vit
 
 ## Acknowledgements
 
-EnergeticAI is derived from TensorFlow and models on TFHub, which are also Apache 2.0 licensed.
+This project is derived from [TensorFlow.js](https://github.com/tensorflow/tfjs) which is also Apache 2.0 licensed.

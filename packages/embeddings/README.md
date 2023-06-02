@@ -50,4 +50,4 @@ npm run test
 
 ## Acknowledgements
 
-EnergeticAI is derived from TensorFlow and models on TFHub, which are also Apache 2.0 licensed.
+This project is derived from [TensorFlow.js](https://github.com/tensorflow/tfjs) and the [Universal Sentence Encoder model library](https://github.com/tensorflow/tfjs-models), which are also Apache 2.0 licensed.

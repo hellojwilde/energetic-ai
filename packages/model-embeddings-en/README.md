@@ -44,4 +44,4 @@ npm run test
 
 ## Acknowledgements
 
-EnergeticAI is derived from TensorFlow and models on TFHub, which are also Apache 2.0 licensed.
+This package is derived from the [Universal Sentence Encoder Lite model weights](https://tfhub.dev/tensorflow/tfjs-model/universal-sentence-encoder-lite/1/default/1), which are also Apache 2.0 licensed.
