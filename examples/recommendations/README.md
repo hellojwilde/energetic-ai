@@ -1,7 +1,19 @@
 # `@energetic-ai/recommendations`
 
+This implements a recommendation engine using text embeddings, for a fictional online store.
+
+## Overview
+
+This is a Remix app that loads product data from a flat file, and uses text embeddings to recommend similar products within a serverless function hosted on Netlify.
+
+Learn about these technologies:
+
 - [Remix Docs](https://remix.run/docs)
 - [Netlify Functions](https://www.netlify.com/products/functions/)
+
+See the live demo: https://energetic-ai-example-recommendations.netlify.app/
+
+See the tutorial: https://energeticai.org/docs/tutorial
 
 ## Netlify Setup
 

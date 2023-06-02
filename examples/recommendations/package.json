@@ -2,7 +2,7 @@
   "name": "@energetic-ai/example-recommendations",
   "private": true,
   "version": "0.1.0",
-  "description": "Example product recommendations with EnergeticAI.",
+  "description": "Example online store that implements product recommendations with EnergeticAI text embeddings.",
   "author": "Jonathan Wilde <hello@jwilde.me>",
   "homepage": "https://energeticai.org",
   "license": "Apache-2.0",

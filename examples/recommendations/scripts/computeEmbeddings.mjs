@@ -14,7 +14,8 @@ const __dirname = path.dirname(__filename);
   const model = await initModel(modelSource);
   const embeddings = await model.embed(
     rawProducts.map(
-      ({ title, category, description }) => `${category} \n ${title}`
+      ({ title, category, description }) =>
+        `${category} \n ${title} \n ${description}`
     )
   );
 
