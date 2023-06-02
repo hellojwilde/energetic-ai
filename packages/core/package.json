@@ -1,10 +1,10 @@
 {
   "name": "@energetic-ai/core",
   "version": "0.1.0",
-  "description": "> TODO: description",
+  "description": "Run open-source AI in serverless functions, up to 67x faster. Compatible with Tensorflow.js.",
   "author": "Jonathan Wilde <hello@jwilde.me>",
-  "homepage": "",
-  "license": "Apache 2",
+  "homepage": "https://energeticai.org",
+  "license": "Apache-2.0",
   "main": "dist/index.js",
   "directories": {
     "dist": "dist"

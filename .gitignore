@@ -2,3 +2,5 @@ node_modules/
 .DS_Store
 *.log
 TODO.md
+# Local Netlify folder
+.netlify

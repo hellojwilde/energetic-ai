@@ -1,9 +1,8 @@
 <p align="center">
-
   <img src="https://raw.githubusercontent.com/realworldprivacy/energetic-ai/main/logo.png" alt="EnergeticAI" width="369" height="84">
 </p>
 
-<p align="center">Run open-source AI in serverless functions, up to 67x faster.</p>
+<p align="center">Run open-source AI in serverless functions, up to 67x faster. Compatible with Tensorflow.js.</p>
 
 # EnergeticAI
 
@@ -22,25 +21,22 @@ EnergeticAI is available on NPM.
 Install the **core package**, along with any **model libraries** you want to use (e.g. embeddings):
 
 ```bash
-npm install @energetic-ai/core @energetic-ai/embeddings
-```
-
-Optionally, you can install the **model weights** locally, which speeds up cold start inference at the cost of module size. If you don't, the model weights will be downloaded on first inference.
-
-```bash
-npm install @energetic-ai/model-embeddings-en
+npm install @energetic-ai/core @energetic-ai/embeddings @energetic-ai/model-embeddings-en
 ```
 
 You can see a full list of packages below.
 
 ## Usage
 
+Here's an example of using the embeddings model:
+
 ```js
-import { initModel } from "@energetic-ai/embeddings";
+import { initModel, distance } from "@energetic-ai/embeddings";
+import { modelSource } from "@energetic-ai/model-embeddings-en";
 (async () => {
-  const model = await initModel();
+  const model = await initModel(modelSource);
   const embeddings = await model.embed(["hello", "world"]);
-  console.log(embeddings);
+  console.log(distance(embeddings[0], embeddings[1])));
 })();
 ```
 
@@ -48,9 +44,13 @@ import { initModel } from "@energetic-ai/embeddings";
 
 This repository contains the following packages:
 
-- **@energetic-ai/core**: the core EnergeticAI library
-- **@energetic-ai/embeddings**: embeddings model library
-- **@energetic-ai/model-embeddings-en**: English embeddings model weights
+| Package                               | Description                                                          |
+| ------------------------------------- | -------------------------------------------------------------------- |
+| **@energetic-ai/core**                | The core EnergeticAI library, comparable to `@tensorflow\tfjs-core`. |
+| **@energetic-ai/embeddings**          | Embeddings model library.                                            |
+| **@energetic-ai/model-embeddings-en** | English embeddings model weights.                                    |
+
+See the readmes in the [packages](packages) directory for more information.
 
 ## Examples
 
@@ -63,5 +63,7 @@ This repository uses [Lerna](https://lerna.js.org/) to manage packages, and [Vit
 ## License
 
 [Apache 2.0](LICENSE)
+
+## Acknowledgements
 
 EnergeticAI is derived from TensorFlow and models on TFHub, which are also Apache 2.0 licensed.

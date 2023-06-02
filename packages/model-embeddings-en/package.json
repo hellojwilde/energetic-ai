@@ -1,10 +1,10 @@
 {
   "name": "@energetic-ai/model-embeddings-en",
   "version": "0.1.0",
-  "description": "> TODO: description",
+  "description": "Pre-trained English-language model weights for `@energetic-ai/embeddings`.",
   "author": "Jonathan Wilde <hello@jwilde.me>",
   "homepage": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "main": "dist/index.js",
   "directories": {
     "dist": "dist"
