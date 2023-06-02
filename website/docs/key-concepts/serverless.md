@@ -1,6 +1,6 @@
 # Serverless
 
-Background on serverless computing, why it's important, and how it relates to EnergeticAI.
+EnergeticAI is optimized for serverless functions. Here's the why and how.
 
 ## What are serverless functions?
 

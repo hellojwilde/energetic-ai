@@ -52,7 +52,7 @@ It performs best on sentences and short paragraphs. If you have longer text, you
 
 - **Splitting the text**: If you have a long document, you can split it into sentences or paragraphs and embed each one separately.
 - **Truncating the text**: If you have a long document, you can truncate it to a specific section that represents the meaning well (e.g. an abstract section).
-- **Averaging the embeddings**: If you have a long document, you can embed each sentence or paragraph separately, then [average the embeddings together](<(https://www.reddit.com/r/LanguageTechnology/comments/st1si5/averaging_sentence_embeddings_to_create/)>) to find the collective meaning.
+- **Averaging the embeddings**: If you have a long document, you can embed each sentence or paragraph separately, then [average the embeddings together](https://www.reddit.com/r/LanguageTechnology/comments/st1si5/averaging_sentence_embeddings_to_create/) to find the collective meaning.
 
 The right approach will depend on your application.
 
