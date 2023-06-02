@@ -41,10 +41,8 @@ class EmbeddingsModel {
   async embed(input: string[]): Promise<number[][]>;
 
   async embed(inputs: string[] | string): Promise<number[][] | number[]> {
-    if (typeof inputs === "string") {
-      inputs = [inputs];
-    }
-    const encodings = inputs.map((d) => this.tokenizer.encode(d));
+    const wrappedInputs = typeof inputs === "string" ? [inputs] : inputs;
+    const encodings = wrappedInputs.map((d) => this.tokenizer.encode(d));
 
     const indicesArr = encodings.map((arr, i) =>
       arr.map((d, index) => [i, index])
@@ -74,10 +72,8 @@ class EmbeddingsModel {
 
     const embeddings = await embeddingsTensor.array();
     embeddingsTensor.dispose();
-    if (Array.isArray(inputs)) {
-      return embeddings;
-    }
-    return embeddings[0];
+
+    return typeof inputs === "string" ? embeddings[0] : embeddings;
   }
 }
 
