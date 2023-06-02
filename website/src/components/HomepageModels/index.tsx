@@ -58,7 +58,7 @@ export default function HomepageModels(): JSX.Element {
             <Model
               title="Embeddings"
               icon={GlobeAltIcon}
-              href="/docs/category/embeddings"
+              href="/docs/guides/embeddings"
             >
               Build recommendations and more with sentence embeddings.
             </Model>

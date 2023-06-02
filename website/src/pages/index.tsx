@@ -27,6 +27,12 @@ function HomepageHeader() {
               serverless functions, with small module size, fast cold-start, and
               incredible ease-of-use.
             </p>
+            <p>
+              <em>
+                Enhance user privacy, simplify your code, and have one less
+                bill.
+              </em>
+            </p>
             <Link
               className="button button--primary button--lg"
               to="/docs/intro"

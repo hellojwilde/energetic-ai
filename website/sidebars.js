@@ -5,7 +5,11 @@ const sidebars = {
     {
       type: "category",
       label: "Key Concepts",
-      items: ["key-concepts/serverless", "key-concepts/embeddings"],
+      items: [
+        "key-concepts/serverless",
+        "key-concepts/tensors",
+        "key-concepts/embeddings",
+      ],
     },
     {
       type: "category",

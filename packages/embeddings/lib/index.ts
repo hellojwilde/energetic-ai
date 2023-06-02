@@ -6,7 +6,9 @@ import {
   tensor2d,
   NamedTensorMap,
   Tensor,
+  Tensor1D,
   Tensor2D,
+  unstack,
 } from "@energetic-ai/core";
 import type { GraphModel } from "@energetic-ai/core";
 import { Tokenizer, Vocabulary } from "./tokenizer";
