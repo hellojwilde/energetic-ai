@@ -9,8 +9,10 @@ declare class EmbeddingsModel {
     tokenizer: Tokenizer;
     model: GraphModel;
     constructor(data: EmbeddingsModelData);
-    embed(inputs: string[] | string): Promise<number[][]>;
+    embed(input: string): Promise<number[]>;
+    embed(input: string[]): Promise<number[][]>;
 }
+export declare function distance(embedding1: number[], embedding2: number[]): number;
 export declare const remoteModelSource: EmbeddingsModelSource;
 export declare function initModel(source?: EmbeddingsModelSource): Promise<EmbeddingsModel>;
 export {};

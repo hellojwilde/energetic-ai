@@ -42,14 +42,14 @@ function HomepageHeader() {
           </div>
           <div className={styles.heroContentRight}>
             <CodeBlock language="js">
-              {`import { initModel } from "@energetic-ai/embeddings";\n\n` +
+              {`import { initModel, distance } from "@energetic-ai/embeddings";\n\n` +
                 `(async () => {\n` +
                 `  const model = await initModel();\n` +
-                `  const embeddings = await model.embed([\n` +
+                `  const [hello, world] = await model.embed([\n` +
                 `     "hello",\n` +
                 `     "world"\n` +
                 `  ]);\n` +
-                `  console.log(embeddings);\n` +
+                `  console.log(distance(hello, world));\n` +
                 `})();\n`}
             </CodeBlock>
             Pre-trained embeddings for recommendations and more.

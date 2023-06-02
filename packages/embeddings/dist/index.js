@@ -19,6 +19,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // lib/index.ts
 var lib_exports = {};
 __export(lib_exports, {
+  distance: () => distance,
   initModel: () => initModel,
   remoteModelSource: () => remoteModelSource
 });
@@ -186,12 +187,27 @@ var EmbeddingsModel = class {
     );
     const values = (0, import_core.tensor1d)(import_core.util.flatten(encodings), "int32");
     const modelInputs = { indices, values };
-    const embeddingsTensor = await this.model.executeAsync(modelInputs);
+    const embeddingsTensor = await this.model.executeAsync(
+      modelInputs
+    );
     indices.dispose();
     values.dispose();
-    return await embeddingsTensor.array();
+    const embeddings = await embeddingsTensor.array();
+    embeddingsTensor.dispose();
+    if (Array.isArray(inputs)) {
+      return embeddings;
+    }
+    return embeddings[0];
   }
 };
+function distance(embedding1, embedding2) {
+  const tensor1 = (0, import_core.tensor1d)(embedding1);
+  const tensor2 = (0, import_core.tensor1d)(embedding2);
+  return (0, import_core.div)(
+    (0, import_core.dot)(tensor1, tensor2),
+    (0, import_core.mul)((0, import_core.norm)(tensor1), (0, import_core.norm)(tensor2))
+  ).arraySync();
+}
 var remoteModelSource = async function() {
   const [model, vocabulary] = await Promise.all([
     (0, import_core.loadGraphModel)(
@@ -210,6 +226,7 @@ async function initModel(source = remoteModelSource) {
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  distance,
   initModel,
   remoteModelSource
 });

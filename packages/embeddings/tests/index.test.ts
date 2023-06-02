@@ -1,15 +1,5 @@
 import { test } from "vitest";
-import { initModel } from "../dist/index";
-import { tensor1d, dot, norm, div, mul } from "@energetic-ai/core";
-
-function cosineSimilarity(embedding1: number[], embedding2: number[]): number {
-  const tensor1 = tensor1d(embedding1);
-  const tensor2 = tensor1d(embedding2);
-  return div(
-    dot(tensor1, tensor2),
-    mul(norm(tensor1), norm(tensor2))
-  ).arraySync() as number;
-}
+import { initModel, distance } from "../dist/index";
 
 test("compute embedding for text", async ({ expect }) => {
   const model = await initModel();
@@ -34,8 +24,8 @@ test("compute embedding for array of text", async ({ expect }) => {
   expect(embeddings).toMatchSnapshot();
 });
 
-test.only(
-  "example: embeddings similarity",
+test(
+  "test distnace function",
   async ({ expect }) => {
     const model = await initModel();
     const [healthy, delicious, embeddings] = await model.embed([
@@ -44,8 +34,8 @@ test.only(
       "Embeddings are a powerful machine learning tool",
     ]);
 
-    expect(cosineSimilarity(healthy, delicious)).closeTo(0.89, 0.01);
-    expect(cosineSimilarity(healthy, embeddings)).closeTo(0.24, 0.01);
+    expect(distance(healthy, delicious)).closeTo(0.89, 0.01);
+    expect(distance(healthy, embeddings)).closeTo(0.24, 0.01);
   },
   { timeout: 100000 }
 );

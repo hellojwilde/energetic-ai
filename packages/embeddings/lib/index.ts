@@ -6,9 +6,11 @@ import {
   tensor2d,
   NamedTensorMap,
   Tensor,
-  Tensor1D,
   Tensor2D,
-  unstack,
+  div,
+  dot,
+  norm,
+  mul,
 } from "@energetic-ai/core";
 import type { GraphModel } from "@energetic-ai/core";
 import { Tokenizer, Vocabulary } from "./tokenizer";
@@ -34,7 +36,11 @@ class EmbeddingsModel {
     this.model = data.model;
   }
 
-  async embed(inputs: string[] | string): Promise<number[][]> {
+  async embed(input: string): Promise<number[]>;
+
+  async embed(input: string[]): Promise<number[][]>;
+
+  async embed(inputs: string[] | string): Promise<number[][] | number[]> {
     if (typeof inputs === "string") {
       inputs = [inputs];
     }
@@ -60,12 +66,28 @@ class EmbeddingsModel {
 
     const modelInputs: EmbeddingModelInputs = { indices, values };
 
-    const embeddingsTensor = await this.model.executeAsync(modelInputs);
+    const embeddingsTensor = (await this.model.executeAsync(
+      modelInputs
+    )) as Tensor2D;
     indices.dispose();
     values.dispose();
 
-    return await (embeddingsTensor as Tensor2D).array();
+    const embeddings = await embeddingsTensor.array();
+    embeddingsTensor.dispose();
+    if (Array.isArray(inputs)) {
+      return embeddings;
+    }
+    return embeddings[0];
   }
+}
+
+export function distance(embedding1: number[], embedding2: number[]): number {
+  const tensor1 = tensor1d(embedding1);
+  const tensor2 = tensor1d(embedding2);
+  return div(
+    dot(tensor1, tensor2),
+    mul(norm(tensor1), norm(tensor2))
+  ).arraySync() as number;
 }
 
 export const remoteModelSource: EmbeddingsModelSource =

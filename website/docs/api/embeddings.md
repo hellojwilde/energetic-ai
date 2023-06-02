@@ -13,11 +13,11 @@ npm install @energetic-ai/embeddings
 If you don't supply a specific model source, `initModel` will implicitly use `remoteModelSource` to download the model weights from [TFHub](https://tfhub.dev/tensorflow/tfjs-model/universal-sentence-encoder-lite/1/default/1) on first use, which can take ~2 seconds.
 
 ```js
-import { initModel } from "@energetic-ai/embeddings";
+import { initModel, distance } from "@energetic-ai/embeddings";
 (async () => {
   const model = await initModel();
   const embeddings = await model.embed(["hello", "world"]);
-  console.log(embeddings);
+  console.log(distance(embeddings[0], embeddings[1]));
 })();
 ```
 
@@ -28,8 +28,7 @@ import { initModel } from "@energetic-ai/embeddings";
 import { modelSource } from "@energetic-ai/model-embeddings-en";
 (async () => {
   const model = await initModel(modelSource);
-  const embeddings = await model.embed(["hello"]);
-  console.log(embeddings[0]);
+  // ... snip ...
 })();
 ```
 
@@ -42,6 +41,7 @@ import { modelSource } from "@energetic-ai/model-embeddings-en";
 | `EmbeddingsModelData`                                                                  | A type representing data for an embeddings model, both vocabulary and model weights.                                                                                                                                                                                                 |
 | `EmbeddingsModelSource`                                                                | A type representing a function that returns a promise of `EmbeddingsModelData`.                                                                                                                                                                                                      |
 | `EmbeddingsModel`                                                                      | A class representing an embeddings model, with a tokenizer and a graph model.                                                                                                                                                                                                        |
-| `EmbeddingsModel.embed(inputs: string[])` or `EmbeddingsModel.embed(inputs: string[])` | A method of the `EmbeddingsModel` class that returns embeddings for each of the input strings, as 512-dimensional vectors. Regardless of the input format, the return value is always an array of arrays.                                                                            |
+| `EmbeddingsModel.embed(inputs: string[])` or `EmbeddingsModel.embed(inputs: string[])` | A method of the `EmbeddingsModel` class that returns embeddings for each of the input strings, as 512-dimensional vectors. If the input is an array, the output will be an array of embeddings. If the input is a string, the output will be an embedding.                           |
 | `remoteModelSource`                                                                    | A constant representing an `EmbeddingsModelSource` that downloads the model weights from [TFHub](https://tfhub.dev/tensorflow/tfjs-model/universal-sentence-encoder-lite/1/default/1).                                                                                               |
 | `initModel(source?: EmbeddingsModelSource)`                                            | A function that initializes an embeddings model with an optional model source. If no model source is passed, `remoteModelSource` is used, which will download weights from [TFHub](https://tfhub.dev/tensorflow/tfjs-model/universal-sentence-encoder-lite/1/default/1) when called. |
+| `distance(a: number[], b: number[])`                                                   | A function that returns the distance between two vectors using [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity).                                                                                                                                                 |
