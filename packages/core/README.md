@@ -42,7 +42,7 @@ import { modelSource } from "@energetic-ai/model-embeddings-en";
 
 ## Examples
 
-See the [examples](examples) directory for examples.
+See the [examples](../../examples) directory for examples.
 
 ## Development
 

@@ -34,6 +34,10 @@ import { modelSource } from "@energetic-ai/model-embeddings-en";
 })();
 ```
 
+## Examples
+
+See the [examples](../../examples) directory for examples.
+
 ## Development
 
 This repository uses [Lerna](https://lerna.js.org/) to manage packages, and [Vitest](https://vitest.dev/) to run tests.
