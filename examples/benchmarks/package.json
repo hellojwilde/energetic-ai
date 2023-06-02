@@ -1,19 +1,14 @@
 {
+  "private": true,
   "name": "@energetic-ai/example-benchmarks",
   "version": "0.1.0",
-  "description": "> TODO: description",
+  "description": "Benchmarks for assembling EnergeticAI packages in different ways.",
   "author": "Jonathan Wilde <hello@jwilde.me>",
-  "homepage": "",
-  "license": "ISC",
+  "homepage": "https://energeticai.org",
+  "license": "Apache-2.0",
   "main": "tests/index.test.js",
-  "directories": {
-    "tests": "tests"
-  },
-  "files": [
-    "tests"
-  ],
   "scripts": {
-    "test": "vitest bench"
+    "bench": "vitest bench"
   },
   "devDependencies": {
     "@energetic-ai/core": "file:../../packages/core",
