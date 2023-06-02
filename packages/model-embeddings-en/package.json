@@ -17,13 +17,17 @@
     "build": "tsc --project tsconfig.json && esbuild ./lib/index.ts --bundle --outfile=dist/index.js --platform=node --external:@energetic-ai/core --external:@energetic-ai/embeddings"
   },
   "dependencies": {
-    "@energetic-ai/core": "file:../core"
+    "@energetic-ai/core": "^0.1.0"
   },
   "devDependencies": {
-    "@energetic-ai/embeddings": "file:../embeddings",
+    "@energetic-ai/embeddings": "^0.1.0",
     "esbuild": "^0.17.19",
     "typescript": "^5.0.4",
     "vite": "^4.3.5",
     "vitest": "^0.31.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
