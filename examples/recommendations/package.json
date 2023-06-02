@@ -1,0 +1,48 @@
+{
+  "name": "@energetic-ai/example-recommendations",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Example product recommendations with EnergeticAI.",
+  "author": "Jonathan Wilde <hello@jwilde.me>",
+  "homepage": "https://energeticai.org",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@energetic-ai/core": "file:../../packages/core",
+    "@energetic-ai/embeddings": "file:../../packages/embeddings",
+    "@energetic-ai/model-embeddings-en": "file:../../packages/model-embeddings-en",
+    "@netlify/functions": "^1.4.0",
+    "@remix-run/css-bundle": "^1.16.1",
+    "@remix-run/netlify": "^1.16.1",
+    "@remix-run/node": "^1.16.1",
+    "@remix-run/react": "^1.16.1",
+    "cross-env": "^7.0.3",
+    "isbot": "^3.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.16.1",
+    "@remix-run/eslint-config": "^1.16.1",
+    "@remix-run/serve": "^1.16.1",
+    "@types/react": "^18.0.35",
+    "@types/react-dom": "^18.0.11",
+    "eslint": "^8.38.0",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realworldprivacy/energetic-ai.git"
+  },
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "cross-env NODE_ENV=production netlify dev",
+    "typecheck": "tsc"
+  },
+  "bugs": {
+    "url": "https://github.com/realworldprivacy/energetic-ai/issues"
+  }
+}
