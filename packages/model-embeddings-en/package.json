@@ -16,7 +16,7 @@
     "test": "vitest",
     "build": "tsc --project tsconfig.json && esbuild ./lib/index.ts --bundle --outfile=dist/index.js --platform=node --external:@energetic-ai/core --external:@energetic-ai/embeddings"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@energetic-ai/core": "^0.1.0"
   },
   "devDependencies": {

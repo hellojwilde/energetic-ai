@@ -7,9 +7,9 @@
   "homepage": "https://energeticai.org",
   "license": "Apache-2.0",
   "dependencies": {
-    "@energetic-ai/core": "file:../../packages/core",
-    "@energetic-ai/embeddings": "file:../../packages/embeddings",
-    "@energetic-ai/model-embeddings-en": "file:../../packages/model-embeddings-en",
+    "@energetic-ai/core": "^0.1.0",
+    "@energetic-ai/embeddings": "^0.1.0",
+    "@energetic-ai/model-embeddings-en": "^0.1.0",
     "@netlify/functions": "^1.4.0",
     "@remix-run/css-bundle": "^1.16.1",
     "@remix-run/netlify": "^1.16.1",
