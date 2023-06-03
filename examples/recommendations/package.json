@@ -8,8 +8,8 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@energetic-ai/core": "^0.1.0",
-    "@energetic-ai/embeddings": "^0.1.0",
-    "@energetic-ai/model-embeddings-en": "^0.1.0",
+    "@energetic-ai/embeddings": "^0.1.1",
+    "@energetic-ai/model-embeddings-en": "^0.1.1",
     "@netlify/functions": "^1.4.0",
     "@remix-run/css-bundle": "^1.16.1",
     "@remix-run/netlify": "^1.16.1",
