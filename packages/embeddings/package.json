@@ -1,6 +1,6 @@
 {
   "name": "@energetic-ai/embeddings",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fast, easy-to-use AI sentence embeddings, optimized for serverless functions.",
   "author": "Jonathan Wilde <hello@jwilde.me>",
   "homepage": "https://energeticai.org",

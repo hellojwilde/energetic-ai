@@ -1,6 +1,6 @@
 {
   "name": "@energetic-ai/model-embeddings-en",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pre-trained English-language model weights for `@energetic-ai/embeddings`.",
   "author": "Jonathan Wilde <hello@jwilde.me>",
   "homepage": "",
@@ -20,7 +20,7 @@
     "@energetic-ai/core": "^0.1.0"
   },
   "devDependencies": {
-    "@energetic-ai/embeddings": "^0.1.0",
+    "@energetic-ai/embeddings": "^0.1.1",
     "esbuild": "^0.17.19",
     "typescript": "^5.0.4",
     "vite": "^4.3.5",
