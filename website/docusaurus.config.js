@@ -54,6 +54,18 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      "posthog-docusaurus",
+      {
+        apiKey: "phc_cD1NFJpa3DkKFDEA2wkNFrmDjb2FvdSYxH0uoAPj5rk",
+        appUrl: "https://energeticai.org/e",
+        enableInDevelopment: false,
+        persistence: "memory",
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
