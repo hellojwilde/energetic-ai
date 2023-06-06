@@ -1,5 +1,5 @@
 [build]
-  command = "remix build"
+  command = "cd examples/recommendations && npm install && remix build"
   publish = "public"
 
 [dev]

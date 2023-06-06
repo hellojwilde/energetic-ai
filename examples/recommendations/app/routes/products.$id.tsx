@@ -52,7 +52,7 @@ export default function ProductDetail() {
       <section className="mt-5 bg-body-tertiary">
         <div className="container py-4">
           <h2>Similar Products</h2>
-          <div className="row row-cols-4 gx-3 mt-3">
+          <div className="row row-cols-4 mt-3">
             {similarProducts.map((product: ProductShort) => (
               <ProductCard key={product.id} product={product} />
             ))}
