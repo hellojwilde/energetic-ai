@@ -38,7 +38,7 @@ Once you've given that a spin, head over to our [tutorial](tutorial.md) for an i
 
 Currently EnergeticAI supports one pre-trained model out of the box:
 
-- [Embeddings](models/embeddings.md)
+- [Embeddings](guides/embeddings.md)
 
 We're excited to add more soon!
 
