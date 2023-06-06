@@ -34,6 +34,9 @@ export function getSimilarProducts(id: string): ProductShort[] {
   for (const otherId of Object.keys(data)) {
     if (otherId == id) continue;
     const { embedding: otherEmbedding } = (data as any)[otherId];
+
+    // Calculate the distance between the embeddings, and add it as a candidate
+    // if it meets a maximum distance requirement.
     const dist = distance(embedding, otherEmbedding);
     if (dist < 0.5) continue;
     distances.push({
@@ -41,8 +44,11 @@ export function getSimilarProducts(id: string): ProductShort[] {
       distance: dist,
     });
   }
+
+  // Sort by distance so that we're showing most similar products first.
   distances.sort((a, b) => b.distance - a.distance);
 
+  // Take the top 4 products, and map them to use the ProductShort type.
   const products = [];
   for (let { id } of distances.slice(0, 4)) {
     const { title, category, price, image } = (data as any)[id];
