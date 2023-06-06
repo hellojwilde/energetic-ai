@@ -17,7 +17,7 @@
     "build": "tsc --project tsconfig.json && esbuild ./lib/index.ts --bundle --outfile=dist/index.js --platform=node --external:@energetic-ai/core"
   },
   "peerDependencies": {
-    "@energeticai/core": "^0.1.0"
+    "@energetic-ai/core": "^0.1.0"
   },
   "devDependencies": {
     "esbuild": "^0.17.19",
