@@ -14,7 +14,7 @@ EnergeticAI uses the lightweight, English-only version of the [Universal Sentenc
 
 Given a sentence or short paragraph in English, the model will return a **512-dimensional vector** that represents the meaning of the text.
 
-## Getting started
+## Creating embeddings from text
 
 You can install the embeddings package using npm:
 
@@ -22,7 +22,7 @@ You can install the embeddings package using npm:
 npm install --save @energetic-ai/core @energetic-ai/embeddings
 ```
 
-Then you can compute embeddings for a single string or multiple strings at once. If you pass in an array of strings, you'll get an array of embeddings back. If you pass a single string, you'll get a single embedding back.
+The embeddings package can compute embeddings for a single string or multiple strings at once. If you pass in an array of strings, you'll get an array of embeddings back. If you pass a single string, you'll get a single embedding back.
 
 ```js
 import { initModel } from "@energetic-ai/embeddings";
