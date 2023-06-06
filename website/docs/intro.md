@@ -74,7 +74,7 @@ Cohere's APIs are similarly fantastic proprietary AI models that are easy to use
 
 - [GitHub](https://github.com/realworldprivacy/energetic-ai)
 - [Blog](/blog)
-- [Real World Privacy](https://realworldprivacy.com/)
+- [Real World Privacy](https://realworldprivacy.com/subscribe)
 
 ## Something missing?
 
