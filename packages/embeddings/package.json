@@ -13,7 +13,7 @@
     "dist"
   ],
   "scripts": {
-    "test": "vitest",
+    "test": "vitest run",
     "build": "tsc --project tsconfig.json && esbuild ./lib/index.ts --bundle --outfile=dist/index.js --platform=node --external:@energetic-ai/core"
   },
   "peerDependencies": {

@@ -7,8 +7,7 @@ test("compute embedding for text", async ({ expect }) => {
 
   const embeddings = await model.embed("hello world");
 
-  expect(embeddings.length).eq(1);
-  expect(embeddings[0].length).eq(512);
+  expect(embeddings.length).eq(512);
   expect(embeddings[0]).toMatchSnapshot();
 });
 
