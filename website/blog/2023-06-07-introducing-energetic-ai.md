@@ -15,11 +15,11 @@ The norm in the AI space is to send massive amounts of data to prioprietary foun
 
 Ideally, you'd able to `npm install` an AI model and use it to build your app.
 
-There's a few existing open-source AI models that you can find on NPM, but they're frequently packaged in ways that make them large and slow in [serverless functions](key-concepts/serverless.md), require a surprising amount of configuration to get working, or not have appropriate licensing for commercial use.
+There's a few existing open-source AI models that you can find on NPM, but they're frequently packaged in ways that make them large and slow in [serverless functions](/docs/key-concepts/serverless), require a surprising amount of configuration to get working, or not have appropriate licensing for commercial use.
 
 ## Enter, EnergeticAI
 
-EnergeticAI solves this, with a distribution of [TensorFlow.js](https://www.tensorflow.org/js) optimized for [serverless functions](/key-concepts/serverless.md):
+EnergeticAI solves this, with a distribution of [TensorFlow.js](https://www.tensorflow.org/js) optimized for [serverless functions](/docs/key-concepts/serverless):
 
 - **Small module size** (~3 MB vs. 146 MB - 513 MB for stock TensorFlow.js)
 - **Fast cold-start inference** (~50 ms vs. 2000+ ms for stock TensorFlow.js)
@@ -27,11 +27,11 @@ EnergeticAI solves this, with a distribution of [TensorFlow.js](https://www.tens
 
 It's intended to be a condensed replacement for TensorFlow.js, so you can use it with much existing code and models, and it's licensed as [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) for commercial use. Dependencies may have different licenses, though on principle we leverage models with permissive licenses.
 
-We're starting with a single pre-trained model, [embeddings](/guides/embeddings.md), and plan to add more soon.
+We're starting with a single pre-trained model, [embeddings](/docs/guides/embeddings), and plan to add more soon.
 
-We have a comprehensive [tutorial](/tutorial.md) to show how to use embeddings to power product recommendations for an e-commerce site:
+We have a comprehensive [tutorial](/docs/tutorial) to show how to use embeddings to power product recommendations for an e-commerce site:
 
-[![Tutorial](/img/tutorial.png)](/tutorial.md)
+[![Tutorial](/img/tutorial.png)](/docs/tutorial)
 
 ## Getting started
 
