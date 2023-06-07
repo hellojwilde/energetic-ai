@@ -71,5 +71,5 @@ This project is standing on the shoulder of giants, derived from [TensorFlow.js]
 We'd love to have you involved in the project! Here's some ways you can help:
 
 - **Try it out**. We'd love to hear your feedback on the project. If you have any questions or comments, please [open an issue](https://github.com/realworldprivacy/energetic-ai/issues).
+- **Spread the word**. Please [star the project](https://github.com/realworldprivacy/energetic-ai) on GitHub and share it with your friends and colleagues!
 - **Contribute**. We'd love to have you contribute to the project. If you're interested in contributing, please [open an issue](https://github.com/realworldprivacy/energetic-ai/issues) and we'll help you get started.
-- **Spread the word**. If you know anyone who might be interested in the project, please share it with them!
