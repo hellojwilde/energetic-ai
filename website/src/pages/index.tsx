@@ -25,7 +25,7 @@ function HomepageHeader() {
               EnergeticAI is TensorFlow.js, optimized for serverless
               environments, with{" "}
               <strong>
-                fast cold-start, small module size, and great usability
+                fast cold-start, small module size, and pre-trained models
               </strong>
               .
             </p>
@@ -64,7 +64,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Use open-source AI in your Node.js apps`}
-      description="EnergeticAI is TensorFlow.js optimized for serverless functions, with fast cold-start, small module size, and ease-of-use."
+      description="EnergeticAI is TensorFlow.js optimized for serverless functions, with fast cold-start, small module size, and pre-trained models."
     >
       <HomepageHeader />
       <main>
