@@ -63,8 +63,8 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   return (
     <Layout
-      title={`Use open-source AI models for your app`}
-      description="EnergeticAI is a distribution of TensorFlow.js optimized for serverless functions, with fast cold-start, small module size, and ease-of-use."
+      title={`Use open-source AI models for your Node.js app`}
+      description="EnergeticAI is TensorFlow.js optimized for serverless functions, with fast cold-start, small module size, and ease-of-use."
     >
       <HomepageHeader />
       <main>
