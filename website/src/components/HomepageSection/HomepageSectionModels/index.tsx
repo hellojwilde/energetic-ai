@@ -47,7 +47,7 @@ function Model({ title, children, icon, href = null, isPlanned = false }) {
 export default function HomepageSectionModels(): JSX.Element {
   return (
     <HomepageSection
-      title="Models"
+      title="Models & Libraries"
       subtitle="Hit the ground running with pre-trained models."
     >
       <div className={styles.models}>
