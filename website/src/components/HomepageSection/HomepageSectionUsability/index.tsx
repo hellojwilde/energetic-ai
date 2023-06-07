@@ -12,14 +12,14 @@ export default function HomepageSectionUsability() {
       contentClassName={styles.usability}
     >
       <p>
-        <strong>Download EnergeticAI from NPM (for Node.js 18+):</strong>
+        <strong>Download EnergeticAI from NPM:</strong>
       </p>
       <CodeBlock language="bash" className={styles.usabilityCode}>
         {`npm install @energetic-ai/core @energetic-ai/embeddings @energetic-ai/model-embeddings-en`}
       </CodeBlock>
-      <p>
-        EnergeticAI libraries and pre-trained models are Apache 2.0 licensed.
-        Dependencies may differ.
+      <p className={styles.usabilityDisclaimer}>
+        Requires on Node 18+. EnergeticAI libraries and pre-trained models are
+        Apache 2.0 licensed. Dependencies may differ.
       </p>
       <Link href="/docs/intro" className="button button--primary button--lg">
         Get Started →

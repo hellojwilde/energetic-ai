@@ -9,3 +9,7 @@
 html:not([data-theme="dark"]) .usabilityCode pre {
   background-color: #fff;
 }
+
+.usabilityDisclaimer {
+  font-size: 0.8em;
+}
