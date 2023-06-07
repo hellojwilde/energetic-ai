@@ -1,10 +1,22 @@
 {
   "name": "@energetic-ai/core",
   "version": "0.1.0",
-  "description": "Run open-source AI in serverless functions, up to 67x faster. Compatible with Tensorflow.js.",
+  "description": "EnergeticAI is TensorFlow.js, optimized for serverless environments, with fast cold-start, small module size, and great usability.",
   "author": "Jonathan Wilde <hello@jwilde.me>",
   "homepage": "https://energeticai.org",
   "license": "Apache-2.0",
+  "keywords": [
+    "embeddings",
+    "vectors",
+    "search",
+    "querying",
+    "machine learning",
+    "natural language processing",
+    "tensorflow",
+    "nlp",
+    "tfjs",
+    "tensorflow.js"
+  ],
   "main": "dist/index.js",
   "directories": {
     "dist": "dist"
@@ -28,6 +40,13 @@
     "long": "^4.0.0",
     "node-fetch": "~2.6.1",
     "seedrandom": "^3.0.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realworldprivacy/energetic-ai.git"
   },
   "publishConfig": {
     "access": "public",

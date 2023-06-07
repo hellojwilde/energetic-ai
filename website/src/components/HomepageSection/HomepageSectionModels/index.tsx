@@ -1,11 +1,11 @@
 import React from "react";
-import clsx from "clsx";
 import styles from "./styles.module.css";
 import {
   GlobeAltIcon,
   MagnifyingGlassIcon,
   ServerStackIcon,
 } from "@heroicons/react/24/outline";
+import HomepageSection from "..";
 
 function Model({ title, children, icon, href = null, isPlanned = false }) {
   const IconComponent = icon;
@@ -44,41 +44,33 @@ function Model({ title, children, icon, href = null, isPlanned = false }) {
   );
 }
 
-export default function HomepageModels(): JSX.Element {
+export default function HomepageSectionModels(): JSX.Element {
   return (
-    <section className={styles.modelsSection}>
-      <div className="container">
-        <h2 className={styles.modelsHeading}>Models</h2>
-        <p className={styles.modelsSubheading}>
-          Hit the ground running with pre-trained alternatives for proprietary
-          models.
-        </p>
-        <div className={styles.models}>
-          <div className="row">
-            <Model
-              title="Embeddings"
-              icon={GlobeAltIcon}
-              href="/docs/guides/embeddings"
-            >
-              Build recommendations and more with sentence embeddings.
-            </Model>
-            <Model
-              title="Semantic Search"
-              isPlanned={true}
-              icon={MagnifyingGlassIcon}
-            >
-              Provide answers based on meaning with question-answering models.
-            </Model>
-            <Model
-              title="Classification"
-              isPlanned={true}
-              icon={ServerStackIcon}
-            >
-              Classify text into categories with just a few training examples.
-            </Model>
-          </div>
+    <HomepageSection
+      title="Models"
+      subtitle="Hit the ground running with pre-trained models."
+    >
+      <div className={styles.models}>
+        <div className="row">
+          <Model
+            title="Embeddings"
+            icon={GlobeAltIcon}
+            href="/docs/guides/embeddings"
+          >
+            Build recommendations and more with sentence embeddings.
+          </Model>
+          <Model
+            title="Semantic Search"
+            isPlanned={true}
+            icon={MagnifyingGlassIcon}
+          >
+            Provide answers based on meaning with question-answering models.
+          </Model>
+          <Model title="Classification" isPlanned={true} icon={ServerStackIcon}>
+            Classify text into categories with just a few training examples.
+          </Model>
         </div>
       </div>
-    </section>
+    </HomepageSection>
   );
 }

@@ -5,6 +5,18 @@
   "author": "Jonathan Wilde <hello@jwilde.me>",
   "homepage": "https://energeticai.org",
   "license": "Apache-2.0",
+  "keywords": [
+    "embeddings",
+    "vectors",
+    "search",
+    "querying",
+    "machine learning",
+    "natural language processing",
+    "tensorflow",
+    "nlp",
+    "tfjs",
+    "tensorflow.js"
+  ],
   "main": "dist/index.js",
   "directories": {
     "dist": "dist"
@@ -24,6 +36,13 @@
     "typescript": "^5.0.4",
     "vite": "^4.3.5",
     "vitest": "^0.31.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realworldprivacy/energetic-ai.git"
   },
   "publishConfig": {
     "access": "public",

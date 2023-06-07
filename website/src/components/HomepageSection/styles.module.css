@@ -1,0 +1,11 @@
+.section {
+  margin: 2rem 0;
+}
+
+.sectionTitle {
+  margin-bottom: 0;
+}
+
+.sectionSubtitle {
+  font-size: var(--ifm-h3-font-size);
+}

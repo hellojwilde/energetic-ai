@@ -2,11 +2,11 @@ import React from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
-import HomepagePerformance from "@site/src/components/HomepagePerformance";
+import HomepageSectionPerformance from "@site/src/components/HomepageSection/HomepageSectionPerformance";
+import HomepageSectionModels from "../components/HomepageSection/HomepageSectionModels";
 import CodeBlock from "@docusaurus/theme-classic/lib/theme/CodeBlock";
-
 import styles from "./index.module.css";
-import HomepageModels from "../components/HomepageModels";
+import HomepageSectionUsability from "../components/HomepageSection/HomepageSectionUsability";
 
 function HomepageHeader() {
   return (
@@ -15,23 +15,22 @@ function HomepageHeader() {
         <div className={styles.heroContent}>
           <div className={styles.heroContentLeft}>
             <h1 className={clsx("hero__title", styles.heroTitle)}>
-              Run open-source AI in serverless functions,
-              <br />
+              Use open-source AI models for your app,{" "}
               <span className={styles.heroTitleHighlight}>
                 up to 67x faster
               </span>
               .
             </h1>
             <p>
-              EnergeticAI is a distribution of TensorFlow.js optimized for
-              serverless functions, with small module size, fast cold-start, and
-              incredible ease-of-use.
+              EnergeticAI is TensorFlow.js, optimized for serverless
+              environments, with{" "}
+              <strong>
+                fast cold-start, small module size, and great usability
+              </strong>
+              .
             </p>
             <p>
-              <em>
-                Enhance user privacy, simplify your code, and have one less
-                bill.
-              </em>
+              Install in seconds, and scale with business-friendly licensing.
             </p>
             <Link
               className="button button--primary button--lg"
@@ -42,9 +41,10 @@ function HomepageHeader() {
           </div>
           <div className={styles.heroContentRight}>
             <CodeBlock language="js">
-              {`import { initModel, distance } from "@energetic-ai/embeddings";\n\n` +
+              {`import { initModel, distance } from "@energetic-ai/embeddings";\n` +
+                `import { modelSource } from '@energetic-ai/model-embeddings-en';\n\n` +
                 `(async () => {\n` +
-                `  const model = await initModel();\n` +
+                `  const model = await initModel(modelSource);\n` +
                 `  const [hello, world] = await model.embed([\n` +
                 `     "hello",\n` +
                 `     "world"\n` +
@@ -63,13 +63,14 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   return (
     <Layout
-      title={`Open-source AI, optimized for serverless`}
-      description="EnergeticAI is a small, fast, easy-to-use distribution of TensorFlow.js — optimized for serverless functions, with pre-trained models for key tasks."
+      title={`Use open-source AI models for your app`}
+      description="EnergeticAI is a distribution of TensorFlow.js optimized for serverless functions, with fast cold-start, small module size, and ease-of-use."
     >
       <HomepageHeader />
       <main>
-        <HomepageModels />
-        <HomepagePerformance />
+        <HomepageSectionModels />
+        <HomepageSectionPerformance />
+        <HomepageSectionUsability />
       </main>
     </Layout>
   );

@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "EnergeticAI",
-  tagline: "Open-source AI models, now up to 67x faster.",
+  tagline: "Use open-source AI models for your app, up to 67x faster.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -18,7 +18,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "hellojwilde", // Usually your GitHub org/user name.
+  organizationName: "realworldprivacy", // Usually your GitHub org/user name.
   projectName: "energetic-ai", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -99,6 +99,13 @@ const config = {
       },
       footer: {
         style: "dark",
+        logo: {
+          alt: "Real World Privacy Logo",
+          src: "img/rwp-logo.png",
+          href: "https://realworldprivacy.com",
+          width: 50,
+          height: 50,
+        },
         links: [
           {
             title: "Docs",
@@ -108,30 +115,33 @@ const config = {
                 to: "/docs/intro",
               },
               {
+                label: "API",
+                to: "/docs/api/core",
+              },
+              {
                 label: "Blog",
                 to: "/blog",
               },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
               {
                 label: "GitHub",
                 href: "https://github.com/realworldprivacy/energetic-ai",
               },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/hellojwilde",
-              },
             ],
           },
           {
-            title: "More",
+            title: "Legal",
             items: [
               {
-                label: "Real World Privacy",
-                to: "https://realworldprivacy.com",
+                label: "Privacy",
+                href: "https://realworldprivacy.com/page/privacy-policy/",
+              },
+              {
+                label: "Terms",
+                href: "https://realworldprivacy.com/page/terms-of-service/",
+              },
+              {
+                label: "Disclaimer",
+                href: "https://realworldprivacy.com/page/disclaimer/",
               },
             ],
           },

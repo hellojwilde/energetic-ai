@@ -50,7 +50,7 @@ This repository uses [Lerna](https://lerna.js.org/) to manage packages, and [Vit
 
 ## License
 
-[Apache 2.0](LICENSE)
+[Apache 2.0](LICENSE), except for dependencies.
 
 ## Acknowledgements
 

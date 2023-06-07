@@ -1,0 +1,18 @@
+.subscribe {
+  min-width: 22em;
+}
+
+.input {
+  color: var(--ifm-color-gray-900);
+  background-color: #fff;
+  border: var(--ifm-button-border-width) solid var(--ifm-button-border-color);
+  border-radius: var(--ifm-button-border-radius);
+  display: inline-block;
+  font-size: calc(0.875rem * var(--ifm-button-size-multiplier));
+  font-weight: var(--ifm-button-font-weight);
+  line-height: 1.5;
+  padding: calc(
+      var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier)
+    )
+    calc(0.75rem * var(--ifm-button-size-multiplier));
+}

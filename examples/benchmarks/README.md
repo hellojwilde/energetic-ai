@@ -1,4 +1,4 @@
-# `@energetic-ai\example-benchmarks`
+# `@energetic-ai/example-benchmarks`
 
 Benchmarks for EnergeticAI, comparing it to TensorFlow.js in various configurations.
 

@@ -1,0 +1,13 @@
+.footerLogo {
+  display: flex;
+}
+
+.footerLogoImage {
+  min-width: 50px;
+  min-width: 50px;
+}
+
+.footerBrand {
+  min-width: 18em;
+  margin-bottom: 1em;
+}

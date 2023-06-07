@@ -3,7 +3,19 @@
   "version": "0.1.2",
   "description": "Pre-trained English-language model weights for `@energetic-ai/embeddings`.",
   "author": "Jonathan Wilde <hello@jwilde.me>",
-  "homepage": "",
+  "homepage": "https://energeticai.org",
+  "keywords": [
+    "embeddings",
+    "vectors",
+    "search",
+    "querying",
+    "machine learning",
+    "natural language processing",
+    "tensorflow",
+    "nlp",
+    "tfjs",
+    "tensorflow.js"
+  ],
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "directories": {
@@ -25,6 +37,13 @@
     "typescript": "^5.0.4",
     "vite": "^4.3.5",
     "vitest": "^0.31.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realworldprivacy/energetic-ai.git"
   },
   "publishConfig": {
     "access": "public",

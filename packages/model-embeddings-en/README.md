@@ -44,7 +44,7 @@ npm run test
 
 ## License
 
-[Apache 2.0](LICENSE)
+[Apache 2.0](LICENSE), except for dependencies.
 
 ## Acknowledgements
 

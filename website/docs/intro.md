@@ -1,14 +1,14 @@
 # Introduction
 
-EnergeticAI makes it easy to run AI models in [serverless functions](key-concepts/serverless.md).
+⚡️ **EnergeticAI makes it easy to use open-source AI models in your app.**
 
-It's a distribution of TensorFlow.js optimized for serverless functions:
+It's a distribution of TensorFlow.js optimized for [serverless functions](key-concepts/serverless.md):
 
 - **Small module size** (~3 MB vs. 146 MB - 513 MB for stock TensorFlow.js)
 - **Fast cold-start inference** (~50 ms vs. 2000+ ms for stock TensorFlow.js)
 - **Incredible ease-of-use** (pre-trained models for common cases)
 
-It's intended to be a condensed replacement for TensorFlow.js, so you can use it with much existing code and models.
+It's intended to be a condensed replacement for TensorFlow.js, so you can typically use it with existing code and models.
 
 ## Getting Started
 
@@ -47,8 +47,9 @@ We're excited to add more soon!
 When designing EnergeticAI, we're guided by the following principles:
 
 - **Serverless first**. We optimize for [serverless functions](key-concepts/serverless.md), as that's the most constrained environment. If it works there, it'll work anywhere.
-- **Minimal configuration**. We focus on having a small API surface area that's easy to use with minimal configuration options. For example, we exclusively accelerate through WebAssembly, as that's fast enough and widely available.
-- **Support incremental adoption**. The EnergeticAI core module is a drop-in replacement for `@tensorflow/tfjs-core`, so you can use it with existing code and models. And the APIs are designed to mimic familiar embeddings and classification libraries, so you can use it with minimal changes to your code.
+- **Minimal configuration**. We focus on having a small API surface area that's easy to use with minimal configuration options. For example, we accelerate through WebAssembly, as that's fast and widely available, but don't aim for GPU acceleration.
+- **Support incremental adoption**. The EnergeticAI core module is a drop-in replacement for `@tensorflow/tfjs-core`, so you can use it with existing code and models.
+- **Business friendly**. We use the business-friendly [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0) license for EnergeticAI, and select pre-trained models and dependencies that are under similarly business-friendly licenses.
 
 ## Comparison with other tools
 
@@ -64,17 +65,20 @@ EnergeticAI is an optimized distribution of TensorFlow.js that solves for these 
 
 ### OpenAI
 
-OpenAI's APIs provide a fantastic proprietary set of AI models. They're easy to use in serverless functions, and the models are more powerful than EnergeticAI's, but come with privacy risk (as you'll have OpenAI as a data processor), cost money, and add vendor lock-in.
+OpenAI's APIs provide a fantastic proprietary set of AI models. They're easy to use in serverless functions, and the models are more powerful than EnergeticAI's, but come with a few differnet risks:
+
+- **Privacy risk**. You'll have OpenAI as a data processor.
+- **Financial cost**. You'll need to budget for OpenAI spend for your product.
+- **Vendor lock-in**. Building a business on top of OpenAI means that they have significant leverage over your business. If they decide to raise prices, or change their terms, you'll have to adapt.
 
 ### Cohere
 
-Cohere's APIs are similarly fantastic proprietary AI models that are easy to use in serverlesss functions. At time of writing Cohere adds [extra review steps](https://docs.cohere.com/docs/usage-guidelines) required to go to production, and comes with similar privacy, billing, and vendor lock-in risks as OpenAI.
+Cohere's APIs provide similar functionality to OpenAI's, and comes with similar risk to OpenAI's. At time of writing Cohere adds [extra review steps](https://docs.cohere.com/docs/usage-guidelines) required to go to production, and comes with similar privacy, billing, and vendor lock-in risks as OpenAI.
 
 ## Staying informed
 
 - [GitHub](https://github.com/realworldprivacy/energetic-ai)
 - [Blog](/blog)
-- [Real World Privacy](https://realworldprivacy.com/subscribe)
 
 ## Something missing?
 
