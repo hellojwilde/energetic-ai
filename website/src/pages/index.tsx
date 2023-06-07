@@ -15,7 +15,7 @@ function HomepageHeader() {
         <div className={styles.heroContent}>
           <div className={styles.heroContentLeft}>
             <h1 className={clsx("hero__title", styles.heroTitle)}>
-              Use open-source AI models for your app,{" "}
+              Use open-source AI in your Node.js apps,{" "}
               <span className={styles.heroTitleHighlight}>
                 up to 67x faster
               </span>
@@ -63,7 +63,7 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   return (
     <Layout
-      title={`Use open-source AI models for your Node.js app`}
+      title={`Use open-source AI in your Node.js apps`}
       description="EnergeticAI is TensorFlow.js optimized for serverless functions, with fast cold-start, small module size, and ease-of-use."
     >
       <HomepageHeader />
