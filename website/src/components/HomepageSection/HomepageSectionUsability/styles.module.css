@@ -3,7 +3,6 @@
   box-shadow: var(--ifm-global-shadow-lw);
   border-radius: var(--ifm-code-border-radius);
   background-color: var(--ifm-pre-background);
-  text-align: center;
 }
 
 html:not([data-theme="dark"]) .usabilityCode pre {
