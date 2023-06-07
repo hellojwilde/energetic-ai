@@ -18,7 +18,7 @@ export default function HomepageSectionUsability() {
         {`npm install @energetic-ai/core @energetic-ai/embeddings @energetic-ai/model-embeddings-en`}
       </CodeBlock>
       <p className={styles.usabilityDisclaimer}>
-        Requires on Node 18+. EnergeticAI libraries and pre-trained models are
+        Requires Node 18+. EnergeticAI libraries and pre-trained models are
         Apache 2.0 licensed. Dependencies may differ.
       </p>
       <Link href="/docs/intro" className="button button--primary button--lg">
