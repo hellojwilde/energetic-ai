@@ -49,6 +49,27 @@ import { initClassifier } from "@energetic-ai/classifiers";
 })();
 ```
 
+## Filtering low confidence classifications
+
+The classifier will return a classification for every input string. However, if you're classifying something that's not in the training data, this prediction might not be very accurate.
+
+Classification results contain confidence values for each potential label. You can use this to filter out low-confidence predictions:
+
+```js
+[
+  {
+    classIndex: 1,
+    label: "Negative",
+    confidences: { Positive: 0, Negative: 1 },
+  },
+  {
+    classIndex: 0,
+    label: "Positive",
+    confidences: { Positive: 0.6666666666666666, Negative: 0.3333333333333333 },
+  },
+];
+```
+
 ## Improving cold-start performance
 
 The first time you call `initClassifier()`, it will download model weights for the [embeddings](embeddings.md) package from the internet. This can take a few seconds, but you can speed it up by installing the English language model weights:
