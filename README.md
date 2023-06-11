@@ -40,11 +40,6 @@ import { modelSource } from "@energetic-ai/model-embeddings-en";
 })();
 ```
 
-Here's an example of using the classifiers model:
-
-```js
-import { initClassifier } from "@energetic-ai/classifiers";
-
 ## Packages
 
 This repository contains the following packages:
@@ -73,4 +68,7 @@ This repository uses [Lerna](https://lerna.js.org/) to manage packages, and [Vit
 ## Acknowledgements
 
 This project is derived from [TensorFlow.js](https://github.com/tensorflow/tfjs), the [Universal Sentence Encoder model library](https://github.com/tensorflow/tfjs-models) and [Universal Sentence Encoder Lite model weights](https://tfhub.dev/tensorflow/tfjs-model/universal-sentence-encoder-lite/1/default/1), which are also Apache 2.0 licensed.
+
+```
+
 ```
