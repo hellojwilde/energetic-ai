@@ -31,6 +31,6 @@ Text embeddings are a powerful tool that can be used for a variety of tasks, inc
 
 - **Recommendations**: Find similar products, movies, or music, by fetching the embeddings for each item and comparing them to the embeddings of the user's preferences.
 - **Semantic Search**: Find similar documents, images, or videos, by fetching the embeddings for each item and comparing them to the embeddings of the user's query.
-- **Classification**: Classify text as spam, hate speech, or other categories, by fetching the embeddings for examples in each category and comparing them to the embeddings of the text. This is also known as "zero-shot classification".
+- **Classification**: Classify text as spam, hate speech, or other categories, by fetching the embeddings for examples in each category and comparing them to the embeddings of the text. This is also known as "few-shot classification".
 - **Clustering**: Group similar documents, images, or videos, by fetching the embeddings for each item and clustering them based on their similarity.
 - **...and more!** Text embeddings are a powerful tool that can be used for many other tasks.

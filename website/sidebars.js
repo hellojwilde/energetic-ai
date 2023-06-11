@@ -14,14 +14,19 @@ const sidebars = {
     {
       type: "category",
       label: "Guides",
-      items: ["guides/embeddings"],
+      items: ["guides/embeddings", "guides/classifiers"],
     },
   ],
   apiSidebar: [
     {
       type: "category",
       label: "Packages",
-      items: ["api/core", "api/embeddings", "api/model-embeddings-en"],
+      items: [
+        "api/core",
+        "api/classifiers",
+        "api/embeddings",
+        "api/model-embeddings-en",
+      ],
     },
   ],
 };

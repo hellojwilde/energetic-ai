@@ -10,7 +10,7 @@ It's a distribution of TensorFlow.js optimized for [serverless functions](key-co
 
 It's intended to be a condensed replacement for TensorFlow.js, so you can typically use it with existing code and models.
 
-## Getting Started
+## Getting started
 
 EnergeticAI is available on NPM.
 
@@ -34,11 +34,12 @@ import { modelSource } from "@energetic-ai/model-embeddings-en";
 
 Once you've given that a spin, head over to our [tutorial](tutorial.md) for an in-depth example of using embeddings to power product recommendations.
 
-## Models
+## Models & libraries
 
-Currently EnergeticAI supports one pre-trained model out of the box:
+Currently EnergeticAI offers two pre-trained model libraries out of the box:
 
 - [Embeddings](guides/embeddings.md)
+- [Classifiers](guides/classifiers.md)
 
 We're excited to add more soon!
 

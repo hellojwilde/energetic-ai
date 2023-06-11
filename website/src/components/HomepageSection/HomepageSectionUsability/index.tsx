@@ -15,7 +15,7 @@ export default function HomepageSectionUsability() {
         <strong>Download EnergeticAI from NPM:</strong>
       </p>
       <CodeBlock language="bash" className={styles.usabilityCode}>
-        {`npm install @energetic-ai/core @energetic-ai/embeddings @energetic-ai/model-embeddings-en`}
+        {`npm install @energetic-ai/core`}
       </CodeBlock>
       <p className={styles.usabilityDisclaimer}>
         Requires Node 18+. EnergeticAI is Apache 2.0 licensed, though

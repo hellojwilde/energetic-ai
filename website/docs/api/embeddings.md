@@ -1,6 +1,6 @@
 # 📦 embeddings
 
-An optimized library for querying sentence embeddings based on the [Universal Sentence Encoder](https://arxiv.org/pdf/1803.11175.pdf). Each embedding is returned as a 512-dimensional array, and you can query multiple sentences at once.
+A library for querying sentence embeddings based on the [Universal Sentence Encoder](https://arxiv.org/pdf/1803.11175.pdf). Each embedding is returned as a 512-dimensional array, and you can query multiple text strings at once.
 
 ## Install
 

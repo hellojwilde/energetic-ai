@@ -19,6 +19,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // lib/index.ts
 var lib_exports = {};
 __export(lib_exports, {
+  EmbeddingsModel: () => EmbeddingsModel,
   distance: () => distance,
   initModel: () => initModel,
   remoteModelSource: () => remoteModelSource
@@ -221,6 +222,7 @@ async function initModel(source = remoteModelSource) {
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  EmbeddingsModel,
   distance,
   initModel,
   remoteModelSource

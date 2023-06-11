@@ -60,14 +60,18 @@ export default function HomepageSectionModels(): JSX.Element {
             Build recommendations and more with sentence embeddings.
           </Model>
           <Model
+            title="Classifiers"
+            icon={ServerStackIcon}
+            href="/docs/guides/classifiers"
+          >
+            Classify text into categories with just a few training examples.
+          </Model>
+          <Model
             title="Semantic Search"
             isPlanned={true}
             icon={MagnifyingGlassIcon}
           >
             Provide answers based on meaning with question-answering models.
-          </Model>
-          <Model title="Classification" isPlanned={true} icon={ServerStackIcon}>
-            Classify text into categories with just a few training examples.
           </Model>
         </div>
       </div>

@@ -1,0 +1,51 @@
+{
+  "name": "@energetic-ai/classifiers",
+  "version": "0.1.3",
+  "description": "Fast, easy-to-use AI few-shot text classification. ",
+  "keywords": [
+    "embeddings",
+    "classify",
+    "classifiers",
+    "classification",
+    "vectors",
+    "machine",
+    "learning",
+    "natural",
+    "language",
+    "processing",
+    "tensorflow",
+    "nlp",
+    "tfjs",
+    "tensorflow.js",
+    "ai",
+    "artificial",
+    "intelligence"
+  ],
+  "author": "Jonathan Wilde <hello@jwilde.me>",
+  "homepage": "https://energeticai.org",
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realworldprivacy/energetic-ai.git"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsc --project tsconfig.json && esbuild ./lib/index.ts --bundle --outfile=dist/index.js --platform=node --external:@energetic-ai/core"
+  },
+  "bugs": {
+    "url": "https://github.com/realworldprivacy/energetic-ai/issues"
+  },
+  "peerDependencies": {
+    "@energetic-ai/core": "^0.1.3"
+  },
+  "dependencies": {
+    "@energetic-ai/embeddings": "^0.1.3"
+  }
+}

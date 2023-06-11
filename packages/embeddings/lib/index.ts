@@ -27,7 +27,7 @@ interface EmbeddingModelInputs extends NamedTensorMap {
   values: Tensor;
 }
 
-class EmbeddingsModel {
+export class EmbeddingsModel {
   tokenizer: Tokenizer;
   model: GraphModel;
 
