@@ -1,6 +1,6 @@
 {
   "name": "@energetic-ai/core",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "EnergeticAI is TensorFlow.js, optimized for serverless environments, with fast cold-start, small module size, and great usability.",
   "author": "Jonathan Wilde <hello@jwilde.me>",
   "homepage": "https://energeticai.org",
@@ -52,5 +52,5 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "gitHead": "9a6bbca7078061ffe80f304bd1d61d7ae56966cf"
+  "gitHead": "2c8b18b2b21c84be5e215ee99fc760adb9825339"
 }
