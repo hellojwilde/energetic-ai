@@ -14,6 +14,13 @@ function HomepageHeader() {
       <div className="container">
         <div className={styles.heroContent}>
           <div className={styles.heroContentLeft}>
+            <iframe
+              src="https://ghbtns.com/github-btn.html?user=realworldprivacy&repo=energetic-ai&type=star&count=true"
+              width="150"
+              height="20"
+              title="GitHub"
+            ></iframe>
+
             <h1 className={clsx("hero__title", styles.heroTitle)}>
               Use open-source AI in your Node.js apps,{" "}
               <span className={styles.heroTitleHighlight}>
