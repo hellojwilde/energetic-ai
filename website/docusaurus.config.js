@@ -91,6 +91,20 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
+            type: "html",
+            position: "right",
+            value: `
+              <div style="display: flex; align-items: center;">
+                <iframe
+                  src="https://ghbtns.com/github-btn.html?user=realworldprivacy&repo=energetic-ai&type=star&count=true"
+                  width="75"
+                  height="20"
+                  title="GitHub"
+                ></iframe>
+              </div>
+            `,
+          },
+          {
             href: "https://github.com/realworldprivacy/energetic-ai",
             label: "GitHub",
             position: "right",

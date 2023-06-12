@@ -14,13 +14,6 @@ function HomepageHeader() {
       <div className="container">
         <div className={styles.heroContent}>
           <div className={styles.heroContentLeft}>
-            <iframe
-              src="https://ghbtns.com/github-btn.html?user=realworldprivacy&repo=energetic-ai&type=star&count=true"
-              width="150"
-              height="20"
-              title="GitHub"
-            ></iframe>
-
             <h1 className={clsx("hero__title", styles.heroTitle)}>
               Use open-source AI in your Node.js apps,{" "}
               <span className={styles.heroTitleHighlight}>
@@ -39,12 +32,27 @@ function HomepageHeader() {
             <p>
               Install in seconds, and scale with business-friendly licensing.
             </p>
-            <Link
-              className="button button--primary button--lg"
-              to="/docs/intro"
-            >
-              Get Started →
-            </Link>
+            <div className={styles.buttonWrapper}>
+              <Link
+                className="button button--primary button--lg"
+                to="/docs/intro"
+              >
+                Get Started →
+              </Link>
+              <a
+                href="https://www.producthunt.com/posts/energeticai?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-energeticai"
+                target="_blank"
+                className={styles.productHunt}
+              >
+                <img
+                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=399058&theme=light"
+                  alt="EnergeticAI - Use&#0032;open&#0045;source&#0032;AI&#0032;in&#0032;your&#0032;Node&#0046;js&#0032;apps&#0044;&#0032;up&#0032;to&#0032;67x&#0032;faster | Product Hunt"
+                  style={{ width: "209px", height: "46px" }}
+                  width="208"
+                  height="45"
+                />
+              </a>
+            </div>
           </div>
           <div className={styles.heroContentRight}>
             <CodeBlock language="js">
