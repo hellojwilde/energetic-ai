@@ -97,7 +97,7 @@ const config = {
               <div style="display: flex; align-items: center;">
                 <iframe
                   src="https://ghbtns.com/github-btn.html?user=realworldprivacy&repo=energetic-ai&type=star&count=true"
-                  width="75"
+                  width="100"
                   height="20"
                   title="GitHub"
                 ></iframe>
