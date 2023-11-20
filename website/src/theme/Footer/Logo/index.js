@@ -32,7 +32,7 @@ export default function FooterLogo({ logo }) {
         <p className="footer__title">Real World Privacy</p>
         <ul className="footer__items clean-list">
           <li className={clsx("footer__item", styles.footerBrand)}>
-            World-class privacy engineering expertise, on-demand.
+            A blog about data privacy engineering.
           </li>
           <li className="footer__item">
             <Link
