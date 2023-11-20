@@ -160,7 +160,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Real World Privacy LLC. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Jonathan Wilde. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
